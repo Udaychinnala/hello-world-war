@@ -1,5 +1,6 @@
 pipeline {
   agent any
+
   stages {
     stage('Checkout') {
       steps {
@@ -7,16 +8,16 @@ pipeline {
         git 'https://github.com/Udaychinnala/hello-world-war.git'
       }
     }
-    stages {
-        stage('Git Tagging') {
-            steps {
-                script {
-                    def tagName = "UDAY" // Set your desired tag name here
-                    sh "git tag ${tagName}" // Creates the Git tag
-                    sh "git push origin ${tagName}" // Pushes the tag to the remote repository
-                }
-            }
+    stage('Create Git Tag') {
+      steps {
+        script {
+          def tag = "Bhaskar" // Specify the tag name you want to create
+          // Create the Git tag
+          sh "git tag ${tag}"
+          // Push the Git tag to the remote repository
+          sh "git push origin ${tag}"
         }
-        // Other stages in your pipeline...
+      }
     }
+  }
 }
