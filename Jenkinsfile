@@ -1,5 +1,12 @@
 pipeline {
-    agent any
+  agent any
+  stages {
+    stage('Checkout') {
+      steps {
+        // Checkout the Git repository
+        git 'https://github.com/Udaychinnala/hello-world-war.git'
+      }
+    }
     stages {
         stage('Git Tagging') {
             steps {
