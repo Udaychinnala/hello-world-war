@@ -11,7 +11,7 @@ pipeline {
     stage('Create Git Tag') {
       steps {
         script {
-          def tag = "Bhaskar" // Specify the tag name you want to create
+          def tag = "uday" // Specify the tag name you want to create
           // Create the Git tag
           sh "git tag ${tag}"
           // Push the Git tag to the remote repository
