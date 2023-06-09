@@ -1,6 +1,8 @@
 <html>
-<head>
-<title>Hello World!</title>
+<head>	
+       <title>
+	AWS Team
+	</title>
 </head>
 <body>
 	<h1>welcome to DevOps engineering !</h1>
@@ -10,4 +12,6 @@
 	<p>
 		You are coming from 
 		<%= request.getRemoteAddr()  %></p>
-</body>
+        <p>
+		<img src="https://raw.githubusercontent.com/Udaychinnala/hello-world-war/master/src/main/webapp/1.png.png"></p>
+</body>	
