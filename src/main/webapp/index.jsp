@@ -1,11 +1,11 @@
 <html>
 <head>	
        <title>
-	AWS Team
+	AWS Devops Team
 	</title>
 </head>
 <body>
-	<h1>welcome to DevOps !!!</h1>
+	<h1>welcome Team!!!</h1>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
